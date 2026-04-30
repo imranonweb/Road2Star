@@ -12,15 +12,13 @@ using namespace std;
 #define MOD 1000000007
 #define MAX LLONG_MAX
 #define MIN LLONG_MIN
-bool isnew(char c){
-    if(string letter == c)
-    return false;
-    else
-    true;
-}
-
 void solve() {
-     
+     string a , b;
+    cin >> a >> b;
+    if(a==b)
+    cout << "Square" << nl;
+    else
+    cout << "Rectangle" << nl;
   }
 
 int main() {

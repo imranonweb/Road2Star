@@ -12,22 +12,16 @@ using namespace std;
 #define MOD 1000000007
 #define MAX LLONG_MAX
 #define MIN LLONG_MIN
-bool isnew(char c){
-    if(string letter == c)
-    return false;
-    else
-    true;
-}
-
 void solve() {
-     
+    string s;
+    getline(cin,s);
+    for(int i = 0; s[i] != '\\';i++){
+        printf("%c",s[i]);
+    }
   }
 
 int main() {
    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    int tc;
-    cin >> tc;  
-    while (tc--)
     solve();
     return 0;
 }

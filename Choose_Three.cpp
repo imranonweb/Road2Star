@@ -12,14 +12,28 @@ using namespace std;
 #define MOD 1000000007
 #define MAX LLONG_MAX
 #define MIN LLONG_MIN
-bool isnew(char c){
-    if(string letter == c)
-    return false;
-    else
-    true;
-}
-
 void solve() {
+     int n , sum;
+     cin >> n >> sum;
+     int arr[n];
+     for(int i = 0;i<n;i++){
+        cin >> arr[i];
+     }
+     bool found = false;
+     for(int i = 0; i < n-2 && !found; i++){
+        for(int j = i+1; j < n-1 && !found; j++){
+            for(int k = j+1; k < n && !found; k++){
+                if(arr[i]+arr[j]+arr[k]==sum) {
+                    found = true;
+                    break;
+                }
+            }
+        }
+     }
+     if(found)
+     yes;
+     else
+     no;
      
   }
 

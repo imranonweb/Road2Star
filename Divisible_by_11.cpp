@@ -12,22 +12,24 @@ using namespace std;
 #define MOD 1000000007
 #define MAX LLONG_MAX
 #define MIN LLONG_MIN
-bool isnew(char c){
-    if(string letter == c)
-    return false;
-    else
-    true;
-}
-
 void solve() {
-     
+    string s; cin >> s;
+    ll sum = 0;
+    for(ll i = 0; i<s.size();i++){
+        ll digit = s[i]-'0';
+        if(i%2==0)
+        sum = sum + digit;
+        else
+        sum -= digit;
+    }
+    if(sum%11==0)
+    yes;
+    else 
+    no;
   }
 
 int main() {
    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    int tc;
-    cin >> tc;  
-    while (tc--)
     solve();
     return 0;
 }

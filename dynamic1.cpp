@@ -12,22 +12,22 @@ using namespace std;
 #define MOD 1000000007
 #define MAX LLONG_MAX
 #define MIN LLONG_MIN
-bool isnew(char c){
-    if(string letter == c)
-    return false;
-    else
-    true;
-}
-
-void solve() {
-     
+int* get_array(int n) {
+    int* arr = new int[n];
+    for(int i = 0;i<n;i++){
+        cin >> arr[i];
+    }
+    return arr;
   }
 
 int main() {
    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    int tc;
-    cin >> tc;  
-    while (tc--)
-    solve();
+   int n; cin >> n;
+   int *a = get_array(n);
+   for(int i = 0;i<n;i++){
+    cout << a[i] << " ";
+   }
+    delete[] a;
+   
     return 0;
 }
